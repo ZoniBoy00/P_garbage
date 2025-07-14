@@ -186,8 +186,7 @@ Config.Locales = {
       ['team_truck_marked'] = 'Tiiminne roska-auto on merkitty kartalle',
       ['team_work_alone'] = 'Työskentele yksin',
       ['team_work_friends'] = 'Työskentele ystävien kanssa',
-      ['invalid_team_code'] = '
-Virheellinen tiimikoodi',
+      ['invalid_team_code'] = 'Virheellinen tiimikoodi',
       ['team_disbanded'] = 'Hajotit tiimin',
       ['team_left'] = 'Poistuit tiimistä',
       ['team_share_code'] = 'Jaa tämä koodi ystävillesi, jotta he voivat liittyä',
