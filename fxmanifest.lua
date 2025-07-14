@@ -1,20 +1,41 @@
 fx_version 'cerulean'
 game 'gta5'
-author 'Projekti'
-description 'Garbage Job'
+
+name 'P_garbage'
+author 'ZoniBoy00 (QBox Conversion)'
+description 'Garbage Collection Job for QBox Framework with Discord Logging'
 version '1.0.0'
+
 lua54 'yes'
 
+shared_scripts {
+    '@qb-core/shared/locale.lua',
+    '@ox_lib/init.lua',
+    'shared/config.lua',
+    'shared/locations.lua',
+}
+
 client_scripts {
-    'client/*.lua'
+    'client/utils.lua',
+    'client/bins.lua',
+    'client/team.lua',
+    'client/main.lua'
 }
 
 server_scripts {
-    'server/*.lua'
+    'server/webhook.lua',
+    'server/teams.lua',
+    'server/main.lua'
 }
 
-shared_scripts {
-    '@es_extended/imports.lua',
-    '@ox_lib/init.lua',
-    'config.lua',
+dependencies {
+    'qb-core',
+    'ox_lib',
+    'ox_target'
+}
+
+escrow_ignore {
+    'shared/config.lua',
+    'shared/locations.lua',
+    'README.md'
 }
